@@ -1,0 +1,9 @@
+<router-outlet></router-outlet>
+
+<mat-form-field style="width: 100%">
+  <input  name="wordInput" type="text" placeholder="What do you want to mimimitize?" ngDefaultControl  matInput [(ngModel)]="word" />
+</mat-form-field>
+
+<button mat-button style="width: 100%;" type="button" (click)="mimimitize()">Mimimitize</button>
+
+<label name="mimitizedWordLabel" ngDefaultControl>{{mimimitizedWord}}</label>
